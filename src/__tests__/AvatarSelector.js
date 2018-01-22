@@ -1,7 +1,5 @@
 import React from 'react';
-import { render, shallow, mount } from 'enzyme';
-import App from '../components/App';
-import { TIMEOUT } from 'dns';
+import {shallow} from 'enzyme';
 import AvatarSelector from '../components/AvatarSelector';
 
 it('should use the correct picture and be the same as Esmeralda', () => {
