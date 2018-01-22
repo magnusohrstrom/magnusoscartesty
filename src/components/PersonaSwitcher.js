@@ -6,7 +6,7 @@ const PersonaSwitcher = ({ currentPersona, changePersona }) => (
   <div className="fixed pin-t pin-r">
     <AvatarSelector currentPersona={currentPersona} />
     <div className="inline-block relative p-4">
-      <select
+      <select data-type = 'selector' 
         value={currentPersona}
         onChange={changePersona}
         className="block appearance-none bg-white border border-grey-light hover:border-grey px-4 py-2 pr-8 rounded shadow"
