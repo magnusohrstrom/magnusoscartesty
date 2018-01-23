@@ -22,6 +22,11 @@ it('should change to correct page when changePage is called', ()=> {
   expect(wrapper.state().currentPage).toEqual('bot');
 });
 
-it()
+it('should set page to home', () => {
+  const wrapper = mount(<App/>);
+  wrapper.setState({currentPage: 'bot'});
+  wrapper.instance().changePage();
+  expect(wrapper.state().currentPage).toEqual('home');
+})
 
 
