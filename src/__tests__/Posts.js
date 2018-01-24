@@ -38,7 +38,7 @@ it('should remove post', () => {
 })
 
 it('should render correct SinglePost html', () => {
-    //wrapper = render(<Posts currentPersona="Zac" />);
+
     const mockedItem = [{ 
         "title": "Posty", 
         "content": "Contenty", 
