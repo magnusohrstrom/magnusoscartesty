@@ -49,9 +49,9 @@ class CreateNewComment extends Component {
 }
 
 CreateNewComment.propTypes = {
-  postId: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
-  updateComments: PropTypes.func.isRequired
+  // postId: PropTypes.string.isRequired,
+  // author: PropTypes.string.isRequired,
+  // updateComments: PropTypes.func.isRequired
 }
 
 export default CreateNewComment;

@@ -12,7 +12,6 @@ it('should set state comments on change of inputvalue for textarea and create ne
         updateComments = {wrapperComments.instance()
             .setCommentsFromLocalStorage}/>);
     
-    console.log(wrapperCreate.props());
     const text = wrapperCreate.find('#comment');
     text.simulate('change', { target : { name: "comment", value : "ÅÅÅÅÅSKAAAAR" }});
     expect(wrapperCreate.state().comment).toEqual("ÅÅÅÅÅSKAAAAR");
