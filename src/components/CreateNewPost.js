@@ -33,9 +33,9 @@ class CreateNewPost extends Component {
   }
 }
 
-// CreateNewPost.propTypes = {
-//   author: PropTypes.string.isRequired,
-//   updatePosts: PropTypes.func.isRequired
-// }
+CreateNewPost.propTypes = {
+  author: PropTypes.string.isRequired,
+  updatePosts: PropTypes.func.isRequired
+}
 
 export default CreateNewPost;

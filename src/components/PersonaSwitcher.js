@@ -28,9 +28,9 @@ const PersonaSwitcher = ({ currentPersona, changePersona }) => (
   </div>
 );
 
-// PersonaSwitcher.propTypes = {
-//   currentPersona: PropTypes.string.isRequired,
-//   changePersona: PropTypes.func.isRequired
-// };
+PersonaSwitcher.propTypes = {
+  currentPersona: PropTypes.string.isRequired,
+  changePersona: PropTypes.func.isRequired
+};
 
 export default PersonaSwitcher;

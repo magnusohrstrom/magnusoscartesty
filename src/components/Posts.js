@@ -47,7 +47,7 @@ class Posts extends Component {
 }
 
 Posts.propTypes = {
-  // currentPersona: PropTypes.string.isRequired
+  currentPersona: PropTypes.string.isRequired
 };
 
 export default Posts;
