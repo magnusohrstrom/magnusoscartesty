@@ -24,7 +24,7 @@ const SinglePost = ({ title, content, author, id, date, currentPersona, onClick 
     <Comments postId={id} currentPersona={currentPersona} />
   </div>
 );
-
+/*
 SinglePost.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
@@ -33,6 +33,7 @@ SinglePost.propTypes = {
   currentPersona: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired
-}
+} 
+*/
 
 export default SinglePost;
