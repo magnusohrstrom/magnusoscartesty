@@ -19,7 +19,7 @@ const SingleComment = ({ id, author, onClick, currentPersona, comment, date }) =
     </p>
   </div>
 );
-
+/*
 SingleComment.propTypes = {
   id: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
@@ -28,5 +28,5 @@ SingleComment.propTypes = {
   comment: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired
 }
-
+*/
 export default SingleComment;

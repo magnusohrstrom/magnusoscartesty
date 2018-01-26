@@ -47,10 +47,10 @@ class Comments extends Component {
     );
   }
 }
-
+/*
 Comments.propTypes = {
   // postId: PropTypes.string.isRequired,
   // currentPersona: PropTypes.string.isRequired
 };
-
+*/
 export default Comments;
