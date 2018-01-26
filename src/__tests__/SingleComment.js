@@ -26,8 +26,6 @@ it("should remove comment on button click", () => {
     localStorage.setItem("comments",mocked);
     const wrapper = mount(<Comments currentPersona='Zac' author="Zac"/>);
     wrapper.instance().setCommentsFromLocalStorage("llsk232");
-
-    console.log(wrapper.render().html());
     
     const removeButton = wrapper.find('.bg-red-dark');
 
