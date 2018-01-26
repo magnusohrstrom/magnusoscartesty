@@ -35,7 +35,8 @@
       "src/**/*.{js,jsx}",
       "!src/setupTests.js",
       "!src/fakePosts.js",
-      "!src/registerServiceWorker.js"
+      "!src/registerServiceWorker.js",
+      "!src/index.js"
     ]
   }
 }
