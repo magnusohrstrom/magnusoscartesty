@@ -31,11 +31,10 @@ class CreateNewPost extends Component {
       </form>
     );
   }
-}
-
+}/*
 CreateNewPost.propTypes = {
   author: PropTypes.string.isRequired,
   updatePosts: PropTypes.func.isRequired
 }
-
+*/
 export default CreateNewPost;

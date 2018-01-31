@@ -12,10 +12,10 @@ const Message = ({ bot, message }) => (
     {message}
   </p>
 );
-
+/*
 Message.propTypes = {
   bot: PropTypes.bool.isRequired,
   message: PropTypes.string.isRequired
 }
-
+*/
 export default Message;
