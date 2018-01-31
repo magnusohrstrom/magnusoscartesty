@@ -11,7 +11,7 @@ const TypingIndicator = ({ typing }) => {
     </div>
   ) : null;
 };
-/*
+
 TypingIndicator.propTypes = {
   typing: PropTypes.bool
 }
@@ -19,5 +19,5 @@ TypingIndicator.propTypes = {
 TypingIndicator.defaultProps = {
   typing: false
 }
-*/
+
 export default TypingIndicator;

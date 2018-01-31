@@ -13,11 +13,8 @@ it('should set fetch posts from local storage and setState on component mount', 
     }];
     const stringified = JSON.stringify(mockedItem);
     localStorage.setItem("posts",stringified);
-    
     const wrapper = mount(<Posts currentPersona='Zac'/>);
-
     expect(wrapper.state().posts[0].id).toEqual('_ilfas!');
-    
 });
 
 it('should remove post', () => {
