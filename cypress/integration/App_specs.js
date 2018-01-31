@@ -17,6 +17,27 @@ describe('App.js', () => {
             cy.get('@commentInput').type('Hello, World from Zac');
             cy.get('@commentSubmit').click();
             cy.get('@Zac').contains('Zac');
+        });
+    });
+    context('Add post', () => {
+        beforeEach(() => {
+            cy.visit('http://localhost:3000/');
+        });
+        it('should add post', () => {
+            cy.get('.block').select('Morgana');
+            cy.get('#title').type('OH YES POSTMAN!');
+            cy.get('#content').type('This is post content');
+            cy.get('.flex-wrap > :nth-child(1) > .bg-indigo-dark').click();
+            cy.get('.flex-wrap > :nth-child(2)').contains('OH YES POSTMAN!');
+            cy.get('.flex-wrap > :nth-child(2)').contains('This is post content');
+
+            cy.get('.block').select('Zac');
+            cy.get('#title').type('OH YES POSTMAN!');
+            cy.get('#content').type('This is post content');
+            cy.get('.flex-wrap > :nth-child(1) > .bg-indigo-dark').click();
+            cy.get('.flex-wrap > :nth-child(2)').contains('OH YES POSTMAN!');
+            cy.get('.flex-wrap > :nth-child(2)').contains('This is post content');
         })
     });
+
 });
