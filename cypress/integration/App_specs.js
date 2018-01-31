@@ -19,7 +19,7 @@ describe('App.js', () => {
             cy.get('@Zac').contains('Zac');
         });
     });
-    context('Add post', () => {
+    context('Add post first from Morgana then from Zac', () => {
         beforeEach(() => {
             cy.visit('http://localhost:3000/');
         });
