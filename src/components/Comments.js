@@ -28,6 +28,7 @@ class Comments extends Component {
     comments.map(comment => (
       <SingleComment
         {...comment}
+        currentPersona={comment.author}
         key={comment.id}
         onClick={this.removeComment}
       />
