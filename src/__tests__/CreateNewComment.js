@@ -5,7 +5,7 @@ import Comments from '../components/Comments';
 
 it('should set state comments on change of inputvalue for textarea and create new comment on form submit', () => {
     
-    const wrapperComments = mount(<Comments/>);
+    const wrapperComments = mount(<Comments postId="asfks" currentPersona="Zac"/>);
     const wrapperCreate = mount(<CreateNewComment 
         author ="Zac"
         postId = "asfks"
@@ -24,7 +24,7 @@ it('should set state comments on change of inputvalue for textarea and create ne
 
 it('should set state comments on change of inputvalue for false value', () => {
     
-    const wrapperComments = mount(<Comments/>);
+const wrapperComments = mount(<Comments postId="asfks" currentPersona="Zac"/>);
     const wrapperCreate = mount(<CreateNewComment 
         author ="Zac"
         postId = "asfks"
