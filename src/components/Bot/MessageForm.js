@@ -38,9 +38,9 @@ class MessageForm extends Component {
     );
   }
 }
-/*
+
 MessageForm.propTypes = {
   onSubmit: PropTypes.func.isRequired
 };
-*/
+
 export default MessageForm;

@@ -14,7 +14,7 @@ const Button = ({ onClick, children, className, danger }) => (
     { children }
   </button>
 );
-/*
+
 Button.propTypes = {
   onClick: PropTypes.func.isRequired,
   children: PropTypes.node.isRequired,
@@ -26,5 +26,5 @@ Button.defaultProps = {
   className: '',
   danger: false
 }
-*/
+
 export default Button;
