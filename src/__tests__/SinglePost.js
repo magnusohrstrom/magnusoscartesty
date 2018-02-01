@@ -6,12 +6,12 @@ import Posts from '../components/Posts';
 import SingleComment from '../components/SingleComment';
 
 it("should render the button when author and current persona match", () => {
-    const wrapper = render(<SinglePost author="Zac" currentPersona="Zac" comment="HejHej" id="blabla" onClick={jest.fn()} date="20010000" />)
+    const wrapper = render(<SinglePost author="Zac" currentPersona="Zac" comment="HejHej" id="blabla" onClick={jest.fn()} date="20010000" title="Posty" content="Contenty"/>)
     expect(wrapper.find("button").html()).toEqual("x");
 })
 
 it("should not render the button when author and current persona dont match", () => {
-    const wrapper = render(<SinglePost author="Zac" currentPersona="Morgana" comment="HejHej" id="blabla" onClick={jest.fn()} date="20010000" />)
+    const wrapper = render(<SinglePost author="Zac" currentPersona="Morgana" comment="HejHej" id="blabla" onClick={jest.fn()} date="20010000" title="Posty" content="Contenty"/>)
     expect(wrapper.find("button").html()).toEqual(null);
 })
 

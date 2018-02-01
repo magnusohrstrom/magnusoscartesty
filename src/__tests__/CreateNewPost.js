@@ -4,7 +4,7 @@ import CreateNewPost from '../components/CreateNewPost';
 import Posts from '../components/Posts';
 
 it('should create new posts with correct title and content', () => {
-    const wrapperPost = mount(<Posts />)
+    const wrapperPost = mount(<Posts currentPersona="Zac" />)
     const wrapper =  mount(<CreateNewPost 
     author="Zac"  
     updatePosts = {wrapperPost.instance()

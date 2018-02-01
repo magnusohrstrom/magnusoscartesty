@@ -49,7 +49,7 @@ it('should render single comment', () => {
     }];    
     const mocked = JSON.stringify(mockedItem);
     localStorage.setItem("comments",mocked);
-    const wrapper = mount(<Comments currentPersona='Zac'/>);
+    const wrapper = mount(<Comments currentPersona='Zac' author="Zac" postId="llsk232"/>);
     wrapper.instance().setCommentsFromLocalStorage("llsk232")
     wrapper.instance().renderCommentList(wrapper.state().comments);
     expect(wrapper.render().find('p').html()).toEqual('Kommentaren');
