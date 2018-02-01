@@ -32,11 +32,11 @@ const wrapperComments = mount(<Comments postId="asfks" currentPersona="Zac"/>);
             .setCommentsFromLocalStorage}/>);
     
     const text = wrapperCreate.find('#comment');
-    text.simulate('change', { target : { name: "comment", value : false }});
-    expect(wrapperCreate.state().comment).toEqual(false);
+    text.simulate('change', { target : { name: "comment", value : "hehehe" }});
+    expect(wrapperCreate.state().comment).toEqual("hehehe");
     const button = wrapperCreate.find('form');
     button.simulate('submit');
     expect(wrapperComments.state().comments[1]
-        .comment).toEqual(false);
+        .comment).toEqual("heheh");
 });
 
