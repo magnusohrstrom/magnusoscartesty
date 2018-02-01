@@ -37,6 +37,6 @@ const wrapperComments = mount(<Comments postId="asfks" currentPersona="Zac"/>);
     const button = wrapperCreate.find('form');
     button.simulate('submit');
     expect(wrapperComments.state().comments[1]
-        .comment).toEqual("heheh");
+        .comment).toEqual("hehehe");
 });
 
